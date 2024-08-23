@@ -1,2 +1,2 @@
 Solutions for [Exercism puzzles](https://exercism.org/tracks/gleam) for the Gleam language track!
-![image](https://github.com/user-attachments/assets/422459ea-3d79-491e-8650-5912777f1720)
+![image](https://github.com/user-attachments/assets/50c87eb5-b5ed-4c6e-83f2-bfca4ec8346f)
