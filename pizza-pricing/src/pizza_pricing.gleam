@@ -10,12 +10,16 @@ pub type Pizza {
 }
 
 pub fn pizza_price(pizza: Pizza) -> Int {
+  do_pizza_prize(pizza, 0)
+}
+
+fn do_pizza_prize(pizza: Pizza, acc: Int) -> Int {
   case pizza {
-    Margherita -> 7
-    Caprese -> 9
-    Formaggio -> 10
-    ExtraSauce(p) -> pizza_price(p) + 1
-    ExtraToppings(p) -> pizza_price(p) + 2
+    Margherita -> 7 + acc
+    Caprese -> 9 + acc
+    Formaggio -> 10 + acc
+    ExtraSauce(p) -> do_pizza_prize(p, acc + 1)
+    ExtraToppings(p) -> do_pizza_prize(p, acc + 2)
   }
 }
 
