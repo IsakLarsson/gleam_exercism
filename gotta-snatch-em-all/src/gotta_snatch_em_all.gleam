@@ -31,7 +31,8 @@ pub fn boring_cards(collections: List(Set(String))) -> List(String) {
 }
 
 pub fn total_cards(collections: List(Set(String))) -> Int {
-  list.fold(collections, set.new(), set.union) |> set.size()
+  list.fold(collections, set.new(), set.union)
+  |> set.size()
 }
 
 pub fn shiny_cards(collection: Set(String)) -> Set(String) {
